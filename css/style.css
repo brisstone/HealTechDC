@@ -71,13 +71,9 @@
 
        
        .navigation-item :hover{
-        transform: translateY(-0.3rem);
-        opacity: 1;
-        
-        background-color: dodgerblue;
-        color: white;
-        padding: 0.5rem; 
-        border-radius: .3rem;
+      
+      
+       
        }
 
        .arrow-down{
@@ -127,7 +123,8 @@
       
         .navigation-link:hover, .navigation-link:active{
             background-position: 100%;
-            transform: translateX(1rem);
+           color: red ;
+           
         }
         
       
@@ -563,7 +560,7 @@
           
             .navigation-link:hover, .navigation-link:active{
                 background-position: 100%;
-                transform: translateX(1rem);
+               color: red;
                 
             }
             
