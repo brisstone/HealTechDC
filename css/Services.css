@@ -1,0 +1,80 @@
+.contact-text-heading{
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-top: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    color: white;
+}
+
+.main-body{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    background-color:  #6A961F;
+    margin-top: 15rem;
+    color: white;
+}
+
+.text-tertiary{
+    background-color: black;
+    font-size: 3rem;
+    /* width: max-content; */
+    text-align: center;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.main-body-descr{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    line-height: 1.9;
+}
+
+.section-chooseUs-text-header{
+    color: #6e9834;
+    font-weight: 800;
+}
+
+
+
+.service-logo-1{
+    background-image: url(../img/jol.jpg);
+    background-repeat: no-repeat;
+    background-size: 34rem;
+}
+
+.service-logo-2{
+    background-image: url(../img/teamwork.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.div-section-chooseUs {
+    display: flex;
+    /* align-content: center; */
+    align-items: center;
+    justify-content: center;
+    column-gap: 7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.section-chooseUs-column {
+
+}
+
+.image-work{
+
+}
+
+.section-chooseUs-logo{
+    height: 20rem;
+    width: 20rem;
+}
