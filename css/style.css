@@ -251,6 +251,7 @@
             
             align-items: center;
             justify-content: center;
+            padding-bottom: 10rem;
             
          
           
@@ -446,7 +447,7 @@
 
         .section-aboutus{
             padding-top: 10rem;
-            margin-top: 15rem;
+           
             padding-left: 8rem;
             padding-right: 8rem;
             padding-bottom: 10rem;
@@ -504,10 +505,10 @@
             color: greenyellow;
         }
         .section-chooseUs{
-            margin-top: 7rem;
+           
             /* background-color: #F9F9F4; */
-            padding-top: 8rem;
-            padding-bottom: 10rem;
+            padding-top: 7rem;
+            padding-bottom: 7rem;
         }
 
         .div-section-chooseUs{
@@ -579,12 +580,12 @@
 
         .section-healthInstitute{
             /* display: flex; */
-            margin-top: 10rem;
+           
             padding-left: 8.5%;
             padding-right: 8.5%;
             background-color: #F9F9F4;
-            padding-bottom: 18rem;
-            padding-top: 8rem;
+            padding-bottom: 10rem;
+            padding-top: 7rem;
         }
 
        
@@ -1287,7 +1288,7 @@
             right: 3rem;
             border-radius: 50%;
             z-index: 2000 ;
-            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.132);
+            box-shadow: 0 1rem 3rem rgba(199, 182, 182, 0.132);
             transition: all .2s;
             text-align: center;
             cursor: pointer;
@@ -1615,6 +1616,10 @@
     font-size: 48% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
         } 
 
+        .content{
+            padding-bottom: 5rem;
+        }
+
         .content-text-main{
             font-size: 3.5rem; 
             /* font-family: Arial, Helvetica, sans-serif; */
@@ -1650,7 +1655,7 @@
          
          .section-aboutus-body-inner{
             padding-right: 1rem;
-         }
+         }cont
 
          .elementor-icon-box-description{
             font-size: 1.2rem;
@@ -1658,11 +1663,11 @@
 
 
         .section-aboutus{
-            padding-top: 10rem;
-            margin-top: 15rem;
+            padding-top: 5rem;
+           
             padding-left: 5rem;
             padding-right: 5rem;
-            padding-bottom: 10rem;
+            padding-bottom: 2rem;
             background-color: #F9F9F4;
          
         }
@@ -1681,7 +1686,9 @@
             margin-bottom: 7rem;
         }
 
-
+        .section-chooseUs{
+            padding-bottom: 1rem;
+        }
         .section-chooseUs-logo-cover{
             margin-bottom: 3rem;
         }
