@@ -6,6 +6,9 @@
     margin-bottom: 4rem;
 }
 
+.body-cover{
+    display: block;
+}
 .main-body{
     display: flex;
     /* height: 160rem; */
@@ -145,6 +148,7 @@
 
 textarea{
     width: 100%;
+    background-color: white;
 }
 
 .grid-5-submit{

@@ -100,10 +100,11 @@
 
    
     .logo-text{
-        font-weight: 900;
+        font-weight: 950;
         position: relative;
         color: darkgreen;
         font-size: 2.2rem;
+        padding-left: 2rem;
 
     }
 
@@ -1727,6 +1728,8 @@
         .div-footer{
             display: flex;
             flex-direction: column;
+            /* align-items: center;
+            align-content: center; */
             
         }
 
