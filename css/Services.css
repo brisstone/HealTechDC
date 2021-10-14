@@ -78,3 +78,71 @@
     height: 20rem;
     width: 20rem;
 }
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 1243px){
+    html{
+            font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+        }
+        .content{
+            /* margin-top: 15%; */
+                      
+        
+        }
+
+}
+
+@media only screen and (max-width: 1024px){
+    html{
+            font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+        }
+
+        .div-body-tertiary-image-cover{
+            width: 20%;
+        }
+
+    }
+
+
+    @media only screen and (max-width: 1243px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+            .content{
+                /* margin-top: 15%; */
+                          
+            
+            }
+    
+    }
+
+    @media only screen and (max-width: 645px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+
+    }
+
+    @media only screen and (max-width: 473px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+
+        .contact-text-heading{
+            font-size: 2.8rem;
+        }
+        .text-tertiary{
+            font-size: 2.5rem;
+        }
+
+        .main-body-descr{
+            font-size: 1.8rem;
+        }
+        .section-elementor-icon-box-description {
+            font-size: 1.8rem;
+            
+        }
+    }

@@ -34,6 +34,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 10rem;
     }
 
     .div-body-secondary-heading{
@@ -41,7 +42,7 @@
         color: green;
        
         margin-bottom: 3rem;
-
+        text-align: center;
         font-weight: 700;
         font-size: 3.5rem;
         margin-bottom: 5rem;
@@ -60,14 +61,168 @@
     }
 
     .div-body-tertiary{
-        display: flex;
-        justify-content: center;
+        /* display: flex; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* justify-content: center; */
+        /* align-items: center; */
+
+        column-gap: 2rem;
         /* align-items: center; */
         margin-left: 4rem;
+        /* width: max-content; */
 
     }
 
     .body-image{
-
+        width: 100%;
+        height: 40rem;
     }
 
+
+
+    /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+    @media only screen and (max-width: 1243px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+            .content{
+                /* margin-top: 15%; */
+                          
+            
+            }
+    
+    }
+    
+    @media only screen and (max-width: 1024px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+    
+            .div-body-tertiary-image-cover{
+                width: 100%;
+            }
+
+            .body-image{
+                width: 100%;
+
+            }
+
+            .div-body-secondary-body{
+                font-size: 2.5rem;
+            }
+
+            .section-elementor-icon-box-description{
+                font-size: 2.5rem;
+            }
+
+            .div-body-secondary-heading{
+                margin-top: 5rem;
+                padding-top: 5rem;
+            }
+    
+        }
+    
+    
+        @media only screen and (max-width: 1243px){
+            html{
+                    font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+                }
+                .content{
+                    /* margin-top: 15%; */
+                              
+                
+                }
+        
+        }
+
+        @media only screen and (max-width: 970px){
+            html{
+                    font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+                }
+
+            .section-chooseUs-logo{
+                height: 24.5rem;
+                width: 24.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .section-chooseUs-text-header{
+
+            }
+
+            .section-chooseUs-logo-cover{
+                margin-bottom: 2rem;
+            }
+    
+        }
+
+        @media only screen and (max-width: 768px){
+            html{
+                    font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+                }
+            .text-headers-secondary{
+                font-size: 2.8rem;
+            }
+    
+        }
+
+
+        
+    
+        @media only screen and (max-width: 645px){
+            html{
+                    font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+                }
+
+            .text-headers-secondary{
+                font-size: 2.4rem;
+                font-weight: 9000;
+            }
+
+            .div-body-tertiary{
+                grid-template-columns: unset;
+                grid-template-rows: 1fr 1fr;
+                margin-right: 10rem;
+                margin-left: 10rem;
+                justify-content: center;
+            }
+
+            .div-body-secondary-body{
+                padding-left: 0rem;
+                padding-right: 0rem;
+                margin-bottom: 25rem;
+                margin-top: 2rem;
+            }
+    
+        }
+
+        @media only screen and (max-width: 463px){
+            html{
+                    font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+                }
+
+                .div-body-secondary-body{
+                    
+                    margin-top: 0rem;
+                }
+
+              .body-image{
+                  height: 30rem;
+              }
+
+              .pre-header-1{
+                  font-size: 1rem;
+              }
+
+              .pre-header-3{
+                  font-size: 1rem;
+              }
+
+              .pre-header-3{
+                  font-size: 1rem;
+              }
+
+        
+        }

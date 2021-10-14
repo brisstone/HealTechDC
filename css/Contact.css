@@ -11,7 +11,7 @@
     /* height: 160rem; */
     /* padding-top: 2rem;
     padding-bottom: 40rem; */
-    column-gap: 8rem;
+    column-gap: 20rem;
     /* padding-left: 4rem; */
     /* padding-right: 4rem; */
     justify-content: center;    
@@ -53,6 +53,7 @@
     
 }
 .text-main-3-back{
+    display: inline-block;
     background-color: white;
     color: black;
     padding-right: 2rem;
@@ -133,13 +134,17 @@
 }
 
 .grid-4-input{
-    width: 100%;
+    /* width: 100%; */
     /* height: 20rem; */
     height: 30rem;
     border-radius: 100px;
     padding-left: 1rem;
     border: 1px solid black;
     border: none;
+}
+
+textarea{
+    width: 100%;
 }
 
 .grid-5-submit{
@@ -183,3 +188,148 @@
 .email-link:hover{
     color: yellowgreen;
 }
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+@media only screen and (max-width: 1243px){
+    html{
+            font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+        }
+        .content{
+            /* margin-top: 15%; */
+                      
+        
+        }
+
+}
+
+@media only screen and (max-width: 1024px){
+    html{
+            font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+        }
+
+        .div-body-tertiary-image-cover{
+            width: 20%;
+        }
+
+    }
+
+
+    @media only screen and (max-width: 1243px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+            .content{
+                /* margin-top: 15%; */
+                          
+            
+            }
+    
+    }
+
+   
+
+    @media only screen and (max-width: 928px){
+        html{
+                font-size: 49.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+        
+        .text-main-1{
+                font-size: 3rem;
+        }
+
+        .text-main-2{
+            font-size: 2.2rem;
+        }
+        .text-main-3{
+            font-size: 1.8rem;
+        }
+
+        .main-body{
+                
+                column-gap: 7rem;
+                padding-left: 8rem;
+                padding-right: 8rem;
+               
+        }
+
+        .main-body-l{
+            width: 50;
+        }
+
+    }
+
+
+    @media only screen and (max-width: 645px){
+        html{
+                font-size: 52.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+
+    }
+
+    @media only screen and (max-width: 835px){
+        html{
+                font-size: 47.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+
+            .main-body{
+                
+               flex-direction: column;
+               height: 90rem;
+               justify-content: unset;
+               width: 100%;
+               
+        }
+
+        .main-body-l {
+            height: unset;
+            margin-bottom: 8rem;
+            /* border: 1px solid red; */
+        }
+        
+        .main-body-2 {
+            height: unset;
+            margin-bottom: 8rem;
+            /* border: 1px solid red; */
+        }
+
+        .main-body-r{
+            /* height: fit-content; */
+        }
+        .main-body-r-flex{
+            height: fit-content;
+        }
+
+    }
+
+
+    @media only screen and (max-width: 465px){
+        html{
+                font-size: 45.25% ;   /* i want 1 rem = 9px ; 10px/16px = 56.25% */
+            }
+
+            .text-main-1{
+                font-size: 2.5rem;
+        }
+
+        .text-main-2{
+            font-size: 2rem;
+        }
+        .text-main-3{
+            font-size: 1.6rem;
+        }
+
+        .main-body{
+                
+            flex-direction: column;
+            height: 98rem;
+            justify-content: unset;
+            width: 100%;
+            
+     }
+
+
+    }
