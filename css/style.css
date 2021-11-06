@@ -829,9 +829,14 @@
             
         }
 
-        .footer-bottom:hover{
+        .footer-bottom-right:hover{
             color: blue;
         }
+
+        .footer-bottom-left:hover{
+            color: blue;
+        }
+
 
 
         .footer-bottom{
