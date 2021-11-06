@@ -13,7 +13,7 @@
     align-content: center;
     justify-content: center;
     text-align: center;
-    background-color:  #6A961F;
+    background-color:  #35b8be;
     margin-top: 15rem;
     color: white;
 }
@@ -38,9 +38,11 @@
 }
 
 .section-chooseUs-text-header{
-    color: #6e9834;
+    color: #0082f3;
     font-weight: 800;
 }
+
+
 
 
 
@@ -66,8 +68,13 @@
     padding-right: 1rem;
 }
 
-.section-chooseUs-column {
+/* .section-chooseUs-column {
+    padding-top: 2rem;
+} */
 
+.section-chooseUs-column{
+    height: 55rem;
+    padding-top: 2rem;
 }
 
 .image-work{
@@ -145,4 +152,29 @@
             font-size: 1.8rem;
             
         }
+    }
+
+
+    @media only screen and (min-width: 1440px){
+        html{
+    font-size: 62.5% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
+        } 
+
+        .main-body{
+            max-width: 1290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navigation{
+            max-width: 1290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .footer{
+            border-top: 1px solid #0082f3;
+        }
+
+
     }

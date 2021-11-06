@@ -6,8 +6,9 @@
 	*::before{
 		margin: 0;
 		padding: 0;
-		box-sizing: border-box;
-    
+		-moz-box-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
 	}
 
 	html{
@@ -36,8 +37,9 @@
 		font-weight: 400;
 		/* font-size: 16px; */
 		line-height: 1.7;
-	
+        
 		box-sizing: border-box;
+        background-color: #f5fbfc;
 	}
 
 
@@ -52,10 +54,10 @@
         justify-content: space-around;
         text-align: center;
         font-size: 1.5rem;
-        background-color: #5fdb07;
+        background-color: #35b8be;
         color: white;
         border-bottom: 1px solid white;
-        height: 3rem;
+        height: 4rem;
         align-items: center;
 
     }
@@ -66,18 +68,25 @@
         margin-right: 7rem;
     }
 
+    .pre-header-1:hover{
+        color: black;
+    }
     .pre-header-2{
         color: white;
         text-decoration: none;
     }
 
     .pre-header-2:hover{
-        color: red;
+        color: black;
     }
 
     .pre-header-3{
         color: white;
         text-decoration: none;
+    }
+
+    .pre-header-3:hover{
+        color: black;
     }
 
     .pre-navigation{
@@ -94,7 +103,7 @@
         backface-visibility: hidden;
     }
     .home-nav-text{
-        color: red;
+        color:#0082f3;
 
     }
 
@@ -102,7 +111,7 @@
     .logo-text{
         font-weight: 950;
         position: relative;
-        color: darkgreen;
+        color: #35b8be;
         font-size: 2.2rem;
         padding-left: 2rem;
 
@@ -119,16 +128,22 @@
 
     .navigation{
       
-        background-color: #5fdb07;
+        background-color: #fff ;
         display: flex;
-        box-shadow: 0 1.5rem 4rem rgba(156, 240, 153, 0.815);
+        color: #35b8be;
+        /* box-shadow: 0 1.5rem 4rem rgba(156, 240, 153, 0.815); */
     
         
         list-style: none;
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        height: 7rem;
+        height: 7.5rem;
+       
+       }
+
+       .navigation-cover{
+           background-color: #fff;
        }
        
        .navigation-checkbox{
@@ -174,13 +189,6 @@
 
        
       
-       .navigation-list :hover{
-    
-       }
-
-      
-
-      
 
        .navigation-link, .navigflexation-link:link, .navigation-link:visited{
         display: inline-block;
@@ -189,21 +197,24 @@
         text-decoration: none;
         
         display: inline-block;
-        margin: 1rem;
+
+      
+        margin-right: 2rem;
         font-size: 1.9rem;
         font-weight: 500;
-        color: white;
+        color: #28224b;
+       
        }
 
       .navigation-segment{
-          padding-left: 3rem;
+          padding-left: 0rem;
           padding-right: 3rem;
       }
         
       
         .navigation-link:hover, .navigation-link:active{
-            background-position: 100%;
-           color: red ;
+           
+           color: #0082f3 ;
            
         }
         
@@ -218,79 +229,32 @@
         
     
         .content{
-            /* margin-top: 10%;
-            margin-left: 25%;
-            margin-right: 25%; */
-                /* padding: 0;
-                display: inline-grid ;
-                height: 70rem;
-                width: 100%;
-                grid-template-columns: 2fr 2fr; */
-            /* grid-gap: 0rem; */
-            /* justify-content: space-around; */
-                /* padding-top: 12%;
-                justify-content: center; */
-            /* align-content: center; */
-            /* justify-items: center; */
-            /* margin: auto; */
-            
-            /* height: 10%; */
-            /* width: 40%; */
-            /* margin: 10% auto; */
-            /* max-height: 10rem; */
-            /* border: 1px solid blue; */
-           
-                /* grid-gap: 10px */
-
             display: flex;
             flex-wrap: wrap;
-            margin-top: 10%;
-            justify-content: space-around;
+            margin-top: 8%;
+            justify-content: space-between;
+            column-gap: 0rem;
             margin-left: 2rem;
             margin-right: 2rem;
-            
             align-items: center;
             justify-content: center;
             padding-bottom: 10rem;
-            
-         
-          
-        
         }
         
         .content-flex{
-            /* flex-basis: 100%; */
-            /* justify-items: stretch  ;         */
-            /* margin-left: 1.5rem; */
-            /* background-color: red; */
-            background-color: white;
-            /* border: 1px solid red ; */
-            /* justify-items: center;
-            align-items: center;
-            vertical-align: middle;
-            align-content: center;
-            justify-self: center; */
-            /* place-self: center; */
-                /* max-width: 100%; */
+            background-color: #f5fbfc;
             flex: 0 0 auto;
-            width: 38%;
-            /* place-self: center; */
-           
-         
+            width: 45%;
+            object-fit: cover;
         }
         
         .content-image{
-          
            height: 450px; 
-           width: 90%;
-           padding-left: 2rem    ;
-           
+           width: 100%;
+           padding-left: 3rem;
             object-fit: cover;
             display: inline-block;
-            /* max-width: 125%; */
-            /* background-color: blue; */
-            
-            
+           
         }
         
         .content-foot{
@@ -298,21 +262,20 @@
             text-align: center;
             align-items: center;
             margin-top: 5%;
-           
         }
 
         .mission-button{
-            background-color: #5fdb07;
-            width: 15rem;
-            height: 4rem;
+            background-color: #35b8be;
+            width: 19rem;
+            height: 6rem;
             color: white;
-            border-color:  #5fdb07;
+            border-color:  #35b8be;
             font-weight: 500;
             border-radius: 10px;
         }
 
         .mission-button:hover{
-            background-color: #6e9834 ;
+            background-color: #3898EC ;
         }
         
 
@@ -396,12 +359,11 @@
         
         .content-text-main{
             font-size: 5.2rem; 
-            /* font-family: Arial, Helvetica, sans-serif; */
-            font-weight: 550;
             margin-top: 0rem;
             margin-bottom: 0;
             padding-bottom: 0;
             color: black;
+            font-weight: 900;
             
         }
 
@@ -412,6 +374,7 @@
             font-size: 2rem;
             margin-top: 0;
             font-weight: 900;
+            color: #546285;
            }
         
         .content-text-secondary{
@@ -457,6 +420,7 @@
 
         .div.section-aboutus{
             /* border: 3px solid red; */
+
             display:grid;
             flex-direction: column;
             row-gap: 30rem;
@@ -467,6 +431,7 @@
             padding-left: 10rem;
 
            
+           
             /* #4A4A4A; */
             
 
@@ -475,7 +440,7 @@
         .section-aboutus-body{
             display: flex;
             height: 20rem;
-            background-color: #6e9834;
+            background-color: #35b8be;
            color: white;
            column-gap: 3rem;
             margin-bottom: 5rem;
@@ -490,7 +455,7 @@
         .section-about-image{
             height: 5rem;
             width: 5rem;
-            background-color: greenyellow;
+            background-color: #1a5558;
             border-radius: 10rem;
             margin-left: 2rem;
             margin-right: 2rem;
@@ -502,7 +467,11 @@
         }
 
         .elementor-icon-box-title:hover{
-            color: greenyellow;
+            color:  #546285;
+        }
+
+        .section-chooseUs-cover{
+            background-color: #fff;
         }
         .section-chooseUs{
            
@@ -529,7 +498,7 @@
             display: flex;
             flex-direction: column;
             height: 50rem;
-            width: 30%;
+            width: 32%;
             /* border: 1px solid red; */
             align-items: center;
             place-self: center;
@@ -543,12 +512,12 @@
         }
 
         .section-chooseUs-logo-cover{
-            margin-bottom: 4rem;
+            margin-bottom: 5rem;
         }
         .section-chooseUs-logo{
             height: 25rem;
             width: 25rem;
-            background-color: greenyellow;
+            background-color: #35b8be;
             align-items: center;
             place-self: center;
             /* border-radius:1rem; */
@@ -563,14 +532,16 @@
         }
 
         .section-chooseUs-text-header{
-            font-weight: 700;
-            font-size: 2rem;
+            font-weight: 800;
+            font-size: 19.8px;
             margin-bottom: 2rem;
+            color: #08090a;
         }
 
         .section-elementor-icon-box-description{
             font-size: 2rem;
             color: #546285;
+            margin-top: 1rem;
 
         }
 
@@ -592,21 +563,14 @@
         .div-section-healthInstitute{
             display: grid;
 
-            grid-template-columns: 1.8fr 1.2fr;   /* 1 fraction ofthe total remaining space // or use repeat(2, 1fr) */ 
+            grid-template-columns: 2fr 2fr;   /* 1 fraction ofthe total remaining space // or use repeat(2, 1fr) */ 
             grid-template-rows: repeat(2, 1fr);  /* row 1 and row 2 */
             gap: 10rem;
 
             box-sizing: border-box;
             
-            font-size: 2.3rem;
-            color: #808285;
-            
-            /* height: 70rem;
-            width: 50rem; */
-            /* column-gap: 4rem; */
-            /* align-items: center;
-            justify-content: center; */
-           
+            font-size: 2rem;
+            color: #808285;       
             
         }
 
@@ -620,6 +584,7 @@
             /* grid-row-start: 1;
             grid-row-end:span 2; */
             background-color: white;
+            grid-area: 1 / 1 / 2 / 2;
             
         }
 
@@ -631,17 +596,23 @@
             
             background-color: white;
 
-            grid-area: 1 / 2 / 3 / 3;  /*row, column, row, column */
+            /* grid-area: 1 / 2 / 3 / 3;  row, column, row, column */
 
             height: fit-content;
+             grid-area: 1 / 2 / 2 / 3;
         }
 
         .third-grid{
-                background-color: white;
+                background-color:white;
+                /* padding-top: 5rem; */
+                padding-top: 6rem;
+                margin-bottom: 0rem;
               
                 /* grid-column-end: 1; */
-                grid-row-start: 2;
-                grid-row-end: span 2;
+                /* grid-row-start: 2;
+                grid-row-end: span 2; */
+                 grid-area: 2 / 1 / 3 / 3;
+                 height: 40rem;
                
         }
         .div-section-healthInstitute-sec1{
@@ -682,7 +653,7 @@
         }
 
         .div-healthInstitute-last{
-            /* background-color: greenyellow; */
+            /* background-color: #35b8be; */
             /* margin-top: -5rem; */
             /* height: unset; */
         }
@@ -702,42 +673,46 @@
             justify-content: center;
             margin-bottom: 2rem;
             /* padding-left: 10rem; */
-            margin-top: -15rem;
+            margin-top: -18rem;
             box-shadow:  rgba(3, 0, 0, 0.132);
             z-index: 0;
+        }
+
+        .image-cover-l{
+            margin-top: -28rem;
         }
 
         .healthtech-image{
             width: 10rem;
             height: 10rem;
-            /* background-color: greenyellow; */
+            /* background-color: #35b8be; */
             -webkit-shape-outside: circle(50% at 50% 50%);
             shape-outside: circle(50% at 50% 50%) ;
             -webkit-shape-clip-path: circle(50% at 50% 50%);
             clip-path: circle(50% at 50% 50%);
             z-index: 0;
+            margin-top: 4rem;
         }
 
         .text-headers{
             text-align: center;
-            font-size: large;
             margin-bottom: 2rem;
             font-weight: 700;
-            font-size: 5.5rem;
-            margin-bottom: 10rem;
-            /* letter-spacing: -0.03em; */
+            font-size: 4.5rem;
+            margin-bottom: 7rem;
+            color: #35b8be;
+            /* line-height: 5; */
         }
         
         .footer{
             display: grid;
-            /* justify-content: space-between; */
-            background-color: #262820;
+            background-color: #f5fbfc;
             height: 39rem;
-            color: white;
+            color: #08090a;
             padding-right: 10rem;
             padding-left: 10rem;
-            /* align-items: center; */
             align-content: center;
+            /* border-top: 1px solid #0082f3; */
         
         }
 
@@ -757,7 +732,7 @@
 
         .elementor-testimonial-name{
             margin-top: 2rem;
-            color: #6e9834;
+            color: #35b8be;
             font-weight: 800;
         }
 
@@ -783,19 +758,11 @@
             font-style: normal;
             /* font-weight: 400;     */
             font-size: 5rem;
-           
-            /* z-index: 2; */
-        
-            /* background-color: blanchedalmond; */
-            /* -webkit-shape-outside: circle(50% at 50% 50%);
-            shape-outside: circle(50% at 50% 50%) ;
-            -webkit-shape-clip-path: circle(50% at 50% 50%);
-            clip-path: circle(50% at 50% 50%); */
-            /* z-index: 10000; */
+          
         }
 
         .footer-social-icon:hover{
-            color: white;
+            color: blueviolet;
         }
 
         .facebook-logo{
@@ -813,7 +780,7 @@
         }
 
         .email-logo:hover{
-            color: white;
+            color: blueviolet;
             font-size: 5rem;  
         }
 
@@ -821,7 +788,7 @@
             display: flex;
             border-top: 1px white solid;
             height: 7rem;
-            background-color: #262820;
+            background-color: #f5fbfc;
             color: #AAAAAA;
             align-items: center;
             justify-content: space-between;
@@ -829,6 +796,7 @@
             padding-left: 20rem;
             padding-right: 20rem;
             font-size: 1.5rem;
+            border-top: 1px black solid;
 
             
         }
@@ -850,17 +818,24 @@
             margin-top: 1.5rem;
             margin-bottom: 1.5rem;
             font-size: 2rem;
-            color: #AAAAAA;
         
         }
 
         .footer-button{
             display: flex;
             row-gap: -2rem;
-            /* flex-direction: ; */
-            /* align-items: center; */
-            /* justify-content: center; */
+           
             column-gap: 0.5rem;
+            
+        }
+
+        .footer-bottom:hover{
+            color: blue;
+        }
+
+
+        .footer-bottom{
+            color: black;
         }
 
         .footer-button-button{
@@ -869,17 +844,19 @@
             align-self: center; */
             margin-top: 2rem;
             border-radius: 10px;
+           background-color: rgb(53, 184, 190);
+          
         }
 
         .footer-button-button:hover{
-            background-color: rgb(221, 253, 179);
+            background-color:blueviolet;;
            border-radius: 10px;
 
         }
 
 
         .footer-bottom-line{
-            background-color: #5fdb07; 
+            background-color: #35b8be; 
             width: 7rem; 
             height: 0.2rem
         }
@@ -984,14 +961,12 @@
          .content-text{
             font-size: 2rem; 
             font-weight: 900px;
-            /* font-family: Arial, Helvetica, sans-serif; */
             font-weight: 550;
          }
 
          
          .content-text-main{
              font-size: 7rem; 
-             /* font-family: Arial, Helvetica, sans-serif; */
              font-weight: 550;
              margin-top: 0rem;
              margin-bottom: 0;
@@ -1031,30 +1006,12 @@
                 flex-direction: column;
                 height: max-content;
                 width: 50%;
-                /* row-gap: 5rem; */
-                /* border: 1px solid red; */
-                /* align-items: center;
-                place-self: center;
-                text-align: center;
-                background-color: white;
-                margin-bottom: 0rem;
-                padding-left: 1rem;
-                padding-right: 1rem; */
-                /* line-height: 3rem; */
             }
 
             .section-chooseUs-logo{
                 height: 40rem;
                 width: 40rem;
                 border-radius: 40rem;
-                /* background-color: greenyellow;
-                align-items: center;
-                place-self: center; */
-                /* border-radius:1rem; */
-                /* margin-top: 3rem; */
-                /* margin-bottom: 3rem; */
-               
-           
             }
 
             .section-chooseUs-logo-cover{
@@ -1066,6 +1023,7 @@
                 font-weight: 700;
                 font-size: 2.5rem;
                 margin-bottom: 2rem;
+                text-transform: lowercase;
             }
 
             .section-elementor-icon-box-description{
@@ -1074,53 +1032,7 @@
     
             }
 
-            .div-section-healthInstitute{
-                display: grid;
-    
-                grid-template-columns: 1fr;   /* 1 fraction ofthe total remaining space // or use repeat(2, 1fr) */ 
-                grid-template-rows: repeat(3, 1fr);  /* row 1 and row 2 */
-                height: max-content;
-                gap: 10rem;
-    
-                box-sizing: border-box;
-                
-                font-size: 2.3rem;
-                color: #808285;
-                
-                /* height: 70rem;
-                width: 50rem; */
-                /* column-gap: 4rem; */
-                /* align-items: center;
-                justify-content: center; */
-               
-                
-            }
-
-            .first-grid{
-                /* grid-column-start: 2;
-                grid-column-end: 3; */
-                /* grid-column-start: 1;
-                grid-column-end: 3; */
-                
-                background-color: white;
-    
-                grid-area: unset;  /*row, column, row, column */
-    
-                height: fit-content;
-            }
-    
-        
-    
-    
-
-            .third-grid{
-                background-color: white;
-              
-                /* grid-column-end: 1; */
-                grid-row-start: unset;
-                grid-row-end: unset;
-               
-        }
+           
             
 
     }
@@ -1164,7 +1076,7 @@
             justify-content: space-around;
             text-align: center;
             font-size: 1.2rem;
-            background-color: #5fdb07;
+            background-color: #35b8be;
             color: white;
             border-bottom: 1px solid white;
             height: 3rem;
@@ -1209,30 +1121,11 @@
             margin-top: 8rem;
             z-index: 200;
             width: 0;
-            
-            
-            /* transform: translateY(0); */
-            /* margin-top: 10rem; */
-            /* z-index: 300000; */
-            
-            /* transition: all .8s;  */
-            background-color: #6e9834;
-            /* padding-left: 3rem;
-            padding-right: 3rem; */
-/* 
-            animation-name: moveUp;
-            animation-duration: 1s;
-            animation-timing-function: ease-in;
-            backface-visibility: hidden; */
-
-            /* transition: all .8s cubic-bezier(0.86, 0, 0.07, 1); */
-
-            /* transition: all .8s cubic-bezier(0.17, 0.67, 0.85, 0.25); */
+                        
+            background-color: #35b8be;
+           
             transition: all .8s ease-out;
-            /* transition: all .8s cubic-bezier(0.79, 0.33, 0.14, 0.53); */
-            
-            
-            
+                                              
         }
 
         .navigation-item{
@@ -1256,15 +1149,7 @@
         }
 
         .navigation-link, .navigflexation-link:link, .navigation-link:visited{
-            /* display: inline-block;
-            text-decoration: none;
-         
-            text-decoration: none;
-            
-            display: inline-block;
-            margin: 1rem;
-            font-size: 1.9rem;
-            font-weight: 500; */
+          
             
             color: white;
            }
@@ -1458,15 +1343,7 @@
         }
         .content{
             margin-top: 10%;
-            /* display: flex;
-            flex-wrap: wrap;
-            
-            justify-content: space-around;
-            margin-left: 2rem;
-            margin-right: 2rem; */
-            
-            /* align-items: center;
-            justify-content: center; */
+           
         }
 
 
@@ -1483,7 +1360,7 @@
 
        @media only screen and (max-width: 640px){
         html{
-    font-size: 48% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
+    font-size: 40% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
         } 
 
         .content-text-main{
@@ -1532,25 +1409,22 @@
         .section-aboutus-body{
             display: flex;
             height: 20rem;
-            background-color: #6e9834;
+            background-color: #35b8be;
            color: white;
            column-gap: 0rem;
-            /* margin-bottom: 5rem; */
+          
         }
 
 
 
         .footer{
             display: grid;
-            /* justify-content: space-between; */
-            background-color: #262820;
+            background-color: #f5fbfc;
             height: 39rem;
-            color: white;
+            color: #08090a;
             padding-right: 0rem;
             padding-left: 3rem;
-            /* align-items: center; */
-            align-content: center;
-        
+            align-content: center;    
         }
 
      
@@ -1562,9 +1436,6 @@
             grid-template-columns: 1fr 1fr;  
             gap: 3.3rem;
 
-            /* justify-content: space-between; */
-            /* align-items: center; */
-            /* align-content: center; */
             width: 90%;
             height: 100%;
             
@@ -1573,26 +1444,30 @@
             display: flex;
             flex-direction: column-reverse;
             row-gap: -2rem;
-            /* flex-direction: ; */
-            /* align-items: center; */
-            /* justify-content: center; */
             column-gap: 0.5rem;
         }
         .footer-bottom{
             display: flex;
             border-top: 1px white solid;
             height: 7rem;
-            background-color: #262820;
-            color: #AAAAAA;
+          
+          
             align-items: center;
             /* justify-content: space-between; */
             align-content: center;
             padding-left: 4rem;
             padding-right: 4rem;
             font-size: 1.5rem;
+            background-color: #f5fbfc;
+      
+            color: #08090a;
+            
 
             
         }
+
+
+       
 
         
         .footer-button-button{
@@ -1675,13 +1550,14 @@
         .section-aboutus-body{
             display: flex;
             height: 20rem;
-            background-color: #6e9834;
+            background-color: #35b8be;
            color: white;
            column-gap: 0rem;
             /* margin-bottom: 5rem; */
         }
     
         .text-headers{
+            
             font-size: 3rem;
             margin-bottom: 7rem;
         }
@@ -1698,16 +1574,7 @@
             flex-direction: column;
             height: max-content;
             width: 70%;
-            /* row-gap: 5rem; */
-            /* border: 1px solid red; */
-            /* align-items: center;
-            place-self: center;
-            text-align: center;
-            background-color: white;
-            margin-bottom: 0rem;
-            padding-left: 1rem;
-            padding-right: 1rem; */
-            /* line-height: 3rem; */
+       
         }
         
         .section-chooseUs-logo{
@@ -1745,6 +1612,35 @@
             font-size: 2.2rem;
         }
 
+        .div-section-healthInstitute{
+            display: grid;
+
+            grid-template-columns: unset;   
+            grid-template-rows: repeat(3, 1fr);  /* row 1 and row 2 */
+            gap: 10rem;
+
+            box-sizing: border-box;
+            
+            font-size: 2rem;
+            color: #808285;       
+            
+        }
+
+        .second-grid{
+            grid-area: unset;
+
+        }
+
+        .first-grid{
+
+            grid-area: unset;
+        }
+
+        .third-grid{
+
+            grid-area: unset;
+        }
+
     }
 
     @media only screen and (max-width: 335px){
@@ -1756,10 +1652,7 @@
             font-size: 2rem;
         }
 
-        /* .text-main-3{
-            text-align: center;
-            font-size: 1.4rem;
-        } */
+     
         .footer{
             height: 60rem;
         }
@@ -1797,9 +1690,85 @@
     }
 
 
-    @media only screen and (min-width: 1800px){
+    @media only screen and (min-width: 1440px){
         html{
-    font-size: 75% ;  /* i want 1 rem = 12px ; 10px/16px = 75% */
-        }  
+    font-size: 62.5% ;  /* i want 1 rem = 12px ; 10px/16px = 75% */
+        } 
 
-    }
+        .navigation{
+            max-width: 1290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-aboutus-body{
+            max-width: 1290px;
+           margin-left: auto;
+           margin-right: auto;
+        }
+        .div-section-chooseUs{
+           
+            max-width: 1330px;
+            margin-left: auto;
+           margin-right: auto;
+
+        }
+
+        .div-section-healthInstitute{
+            max-width: 1290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content{
+            max-width: 1397px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+
+        .section-chooseUs-column{
+            display: flex;
+            flex-direction: column;
+            height: 50rem;
+            width: 70%;
+
+        }
+
+        .footer {
+            max-width: 1350px;
+            margin-left: auto;
+            margin-right: auto;
+            color:black;
+            padding-right: 0rem;
+            padding-left: 3rem;
+            /* align-items: center; */
+            align-content: center;
+        }
+     /* .section-aboutus{
+         padding-left: 25%;
+         padding-right: 25%;
+     } 
+     
+     .section-chooseUs{
+        padding-left: 25%;
+        padding-right: 25%;
+     }
+
+     .section-healthInstitute{
+        padding-left: 25%;
+        padding-right: 25%;
+     }
+
+     .content{
+        padding-left: 19%;
+        padding-right: 17%;
+     }
+
+     .navigation{
+        padding-left: 24%;
+        padding-right: 24%;
+     } */
+    
+
+}

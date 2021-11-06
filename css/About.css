@@ -18,28 +18,45 @@
         font-size: 3.5rem;
         margin-bottom: 7rem;
         letter-spacing: -0.03em;
-        color: green;
+        color: #0082f3;
         /* color: #6e9834; */
     }
 
     .section-chooseUs-text-header{
-        color: green;
+        color:#0082f3;
         font-weight: 800;
         margin-bottom: 3rem;
     }
 
+    .body-secondary{
+        background-color: #fff;
+        height: 75rem;
+        padding-top: 10rem;
+        /* padding-bottom: 5rem; */
+        
+      
+      
+    
+    }
 
+
+    .section-chooseUs-column{
+        height: 80rem;
+        padding-top: 8rem;
+    }
     .div-body-secondary{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-bottom: 10rem;
+    
+        /* margin-bottom: 10rem; */
+        /* padding-bottom: 3rem; */
     }
 
     .div-body-secondary-heading{
     
-        color: green;
+        color: #0082f3;
        
         margin-bottom: 3rem;
         text-align: center;
@@ -70,7 +87,7 @@
         /* column-gap: 2rem; */
         /* align-items: center; */
         margin-left: 4rem;
-        /* width: max-content; */
+       
 
     }
 
@@ -173,6 +190,50 @@
             .text-headers-secondary{
                 font-size: 2.8rem;
             }
+
+            .body-secondary{
+                background-color: #fff;
+                height: 120rem;
+                padding-top: 10rem;
+                /* padding-bottom: 5rem; */
+                                               
+            }
+
+            /* .div-body-secondary-body {
+                font-size: 3rem;
+                padding-left: 0rem;
+                padding-right: 0rem;
+                margin-bottom: 5rem;
+                color: #546285;
+            } */
+
+            .div-body-tertiary{
+              
+                display: flex;
+                flex-direction: column;
+             
+                margin-left: 3rem;
+                margin-right: 3rem;
+            
+        
+            }
+
+           
+
+            .body-image{
+                width: 100%;
+                height: 40rem;
+            }
+
+           
+
+            .div-descr{
+               
+                height: 0fr;
+              
+                text-align: center;
+                padding-top: 5rem;
+            }
     
         }
 
@@ -245,6 +306,46 @@
 
               .div-body-tertiary-image-cover{
                   height: max-content;
+                
               }
+
+
+              .div-descr{
+               
+                height: 0fr;
+              
+                text-align: center;
+                padding-top: 0rem;
+                font-size: 2.5rem;
+            }
         
+        }
+
+
+
+        @media only screen and (min-width: 1440px){
+            html{
+        font-size: 62.5% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
+            } 
+
+            .div-body-tertiary{
+                max-width: 1290px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+
+
+            .navigation{
+                max-width: 1290px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .section-chooseUs-column{
+                height: 70rem;
+                padding-top: 8rem;
+            }
+
+
         }

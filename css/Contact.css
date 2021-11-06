@@ -8,6 +8,10 @@
 
 .body-cover{
     display: block;
+    background-color: white;
+    padding-top: 20rem;
+    padding-bottom: 0.5rem;
+   
 }
 .main-body{
     display: flex;
@@ -20,9 +24,9 @@
     justify-content: center;    
     /* align-items: center; */
     align-content: center;
-    background-color: #6A961F;
+    background-color: #35b8be;
     padding-top: 10rem;
-    margin-bottom: 10rem;
+    margin-bottom: 30rem;
 }
 
 .main-body-l{
@@ -35,13 +39,14 @@
     /* justify-content: center; */
     /* padding-top: 10%; */
     /* background-color: yellow; */
-    color: white;
+    color: black;
 }
 
 .text-main-1{
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    color: greenyellow;
+    color:  black; 
+   
 }
 
 .text-main-2{
@@ -74,6 +79,7 @@
     height: max-content;
     /* padding-bottom: 10rem; */
 }
+
 
 .main-body-r{
     display: grid;
@@ -157,16 +163,18 @@ textarea{
     border-radius: 100px;
     padding-left: 1rem;
     background-color: white;
-    background-color: greenyellow;
+    background-color: #9ad0ff ;
     border: none;
 }
 
 .grid-5-submit:hover{
-    background-color: green;
+    background-color: #35b8be;
+    border: 1px solid white;
+    color: white;
 }
 
 .phone-icon{
-    color: green;
+    color: #35b8be;
     margin-right: 2rem;
     
     padding: 0.5rem;
@@ -175,7 +183,7 @@ textarea{
 }
 
 .phone-icon:hover, .mail-icon:hover{
-    background-color: lawngreen;
+    background-color: #35b8be;
     color: white;
   
 }
@@ -190,7 +198,7 @@ textarea{
 }
 
 .email-link:hover{
-    color: yellowgreen;
+    color: #35b8be;
 }
 
 
@@ -334,6 +342,28 @@ textarea{
             width: 100%;
             
      }
+
+
+    }
+
+
+    
+    @media only screen and (min-width: 1440px){
+        html{
+    font-size: 62.5% ;  /* i want 1 rem = 12px ; 8px/16px = 50% */
+        } 
+
+        .main-body{
+            max-width: 1290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .navigation{
+            max-width: 1290px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
 
     }
